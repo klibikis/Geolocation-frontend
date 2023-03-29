@@ -1,0 +1,9 @@
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.background{
+  background: linear-gradient(to right top, rgba(0, 255, 0, 0.201) 0%, rgba(255, 255, 255, 0.567) 60%, rgb(255, 255, 255) 100%);
+}

@@ -1,0 +1,81 @@
+.locationListMainWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.locationListContainer{
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 255, 0, 0.119);
+    border-radius: 5px;
+}
+.locationListColumn{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.tableHeading{
+    display: table-row;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(176, 255, 176);
+    position: sticky;
+    inset-block-start: 0;
+}
+.locationTable{
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+}
+.tableCell{
+    display: table-cell;
+    padding: 5px 0;
+    position: relative;
+}
+.locationListHeading{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 992px){
+    .locationListMainWrapper{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .locationListContainer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .locationListColumn{
+        width: 100%;
+    }
+}
+.flexRow{
+    display: flex;
+    justify-content: space-around;
+}
+.deleteLocationButton{
+    border: none;
+    width: 20px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.314);
+    color: red;
+    position: absolute;
+    right: 5px;
+    transition: background-color 0.2s ease;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.164);
+    }
+}
