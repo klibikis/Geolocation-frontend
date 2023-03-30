@@ -1,5 +1,5 @@
 import styles from './App.module.scss'
-import HomePage from './Pages/Home/Home.page'
+import LocationsPage from './Pages/Locations/Locations.page'
 import LoginPage from './Pages/Login/Login.page'
 import { Route, Routes } from 'react-router-dom'
 
@@ -10,7 +10,7 @@ function App() {
     <div className={styles.appContainer}>
       <Routes>
         <Route path = '/' element = {<LoginPage/>} />
-        <Route path = '/map' element = {<HomePage/>} />
+        <Route path = '/map' element = {<LocationsPage/>} />
       </Routes>
     </div>
   )
